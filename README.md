@@ -68,7 +68,7 @@ The latest changelog can be viewed [here](https://pymupdf.readthedocs.io/en/late
 
 # Installation
 
-PyMuPDF **requires Python 3.6 or later**.
+PyMuPDF **requires Python 3.7 or later**.
 
 For versions 3.7 and up, Python wheels exist for **Windows** (32bit and 64bit), **Linux** (64bit, Intel and ARM) and **Mac OSX** (64bit, Intel only), so it can be installed from [PyPI](https://pypi.org/search/?q=pymupdf) in the usual way. To ensure pip support for the latest wheel platform tags, we strongly recommend to always upgrade pip first.
 
@@ -87,15 +87,7 @@ There are **no mandatory** external dependencies. However, some **optional featu
 
 Older wheels - also with support for older Python versions - can be found [here](https://github.com/pymupdf/PyMuPDF-Optional-Material/tree/master/wheels-upto-Py3.5) and on PyPI.
 
-Other platforms **require installation from sources**, follow [these](https://pymupdf.readthedocs.io/en/latest/installation.html) instructions in the documentation.
-
-> **Note:** If `pip` cannot find a wheel that is compatible with your platform, it will automatically try an installation from sources - **_which will fail_** if MuPDF (including its sources) is not installed on your system.
-
-This repo's folder [installation](https://github.com/pymupdf/PyMuPDF/tree/master/installation) contains several platform-specific source installation scripts contributed by users. You may also find the following Wiki pages useful:
-
-* [Ubuntu installation experience](https://github.com/pymupdf/PyMuPDF/wiki/Ubuntu-Installation-Experience).
-* [Windows wheels](https://github.com/pymupdf/PyMuPDF/wiki/Windows-Binaries-Generation).
-
+> **Note:** If `pip` cannot find a wheel that is compatible with your platform, it will automatically build and install from source using the PyMuPDF sdist; this requires only that SWIG is installed on your system. New in PyMuPDF-1.20: there is no need to separately build/install MuPDF - the sdist already contains the correct release of the MuPDF source code, and this will be automatically built internally when installing.
 
 # License and Copyright
 In order to comply with MuPDF’s dual licensing model, PyMuPDF has entered into an agreement with Artifex who has the right to sublicense PyMuPDF to third parties.

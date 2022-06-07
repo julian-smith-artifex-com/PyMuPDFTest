@@ -13,7 +13,9 @@ This release has minimal functional changes, to work with MuPDF-1.20.
 
 Changes to build/release process:
 
-* Various changes to setup.py to always use the required version of MuPDF. See comment at start of setup.py for details.
+* If pip builds from source because wheels are not available for your system, we no longer require MuPDF to be pre-installed.
+
+* Various changes to setup.py to always use the required MuPDF release. See comment at start of setup.py for details.
 
 * Added `.github/workflows/build_wheels.yml` to control building of wheels on Github.
 
