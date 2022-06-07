@@ -92,7 +92,6 @@ Older wheels - also with support for older Python versions - can be found [here]
 > [New in `PyMuPDF-1.20`: there is no need to separately build or install MuPDF; the required MuPDF source code is already in the sdist and is automatically built into PyMuPDF.]
 
 # License and Copyright
-In order to comply with MuPDF’s dual licensing model, PyMuPDF has entered into an agreement with Artifex who has the right to sublicense PyMuPDF to third parties.
 
 PyMuPDF and MuPDF are now available under both, open-source AGPL and commercial license agreements.
 
