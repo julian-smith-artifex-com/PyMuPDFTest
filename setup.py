@@ -393,7 +393,11 @@ def get_mupdf_tgz():
     '''
     mupdf_url_or_local = os.environ.get(
             'PYMUPDF_SETUP_MUPDF_SDIST',
-            'https://mupdf.com/downloads/archive/mupdf-1.20.0-rc2-source.tar.gz',
+            #'https://mupdf.com/downloads/archive/mupdf-1.20.0-rc2-source.tar.gz',
+            
+            # For testing mupdf 3a80be1520 'Always include tesseract NEON code
+            # file in build.' fix for building on arch64.
+            'https://ghostscript.com/~julian/mupdf-jules.tar.gz',
             )
     log( f'mupdf_url_or_local={mupdf_url_or_local!r}')
     if mupdf_url_or_local == '':
