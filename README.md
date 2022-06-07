@@ -7,7 +7,7 @@ Release date: June 6, 2022
 On **[PyPI](https://pypi.org/project/PyMuPDF)** since August 2016: [![Downloads](https://static.pepy.tech/personalized-badge/pymupdf?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/pymupdf)
 
 # Author
-[Artifex], based on code by [Jorj X. McKie](mailto:jorj.x.mckie@outlook.de), based on original code by [Ruikai Liu](mailto:lrk700@gmail.com).
+[Artifex](support@artifex.com), based on code by [Jorj X. McKie](mailto:jorj.x.mckie@outlook.de), based on original code by [Ruikai Liu](mailto:lrk700@gmail.com).
 
 # Introduction
 
@@ -87,7 +87,9 @@ There are **no mandatory** external dependencies. However, some **optional featu
 
 Older wheels - also with support for older Python versions - can be found [here](https://github.com/pymupdf/PyMuPDF-Optional-Material/tree/master/wheels-upto-Py3.5) and on PyPI.
 
-> **Note:** If `pip` cannot find a wheel that is compatible with your platform, it will automatically build and install from source using the PyMuPDF sdist; this requires only that SWIG is installed on your system. New in PyMuPDF-1.20: there is no need to separately build/install MuPDF - the sdist already contains the correct release of the MuPDF source code, and this will be automatically built internally when installing.
+> **Note:** If `pip` cannot find a wheel that is compatible with your platform, it will automatically build and install from source using the PyMuPDF sdist; this requires only that SWIG is installed on your system.
+
+> [New in `PyMuPDF-1.20`: there is no need to separately build or install MuPDF; the required MuPDF source code is already in the sdist and is automatically built into PyMuPDF.]
 
 # License and Copyright
 In order to comply with MuPDF’s dual licensing model, PyMuPDF has entered into an agreement with Artifex who has the right to sublicense PyMuPDF to third parties.
