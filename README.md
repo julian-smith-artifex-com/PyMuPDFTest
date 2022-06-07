@@ -72,10 +72,8 @@ PyMuPDF **requires Python 3.7 or later**.
 
 For versions 3.7 and up, Python wheels exist for **Windows** (32bit and 64bit), **Linux** (64bit, Intel and ARM) and **Mac OSX** (64bit, Intel only), so it can be installed from [PyPI](https://pypi.org/search/?q=pymupdf) in the usual way. To ensure pip support for the latest wheel platform tags, we strongly recommend to always upgrade pip first.
 
-```
-python -m pip install --upgrade pip
-python -m pip install --upgrade pymupdf
-```
+    python -m pip install --upgrade pip
+    python -m pip install --upgrade pymupdf
 
 There are **no mandatory** external dependencies. However, some **optional features** become available only if additional packages are installed:
 
